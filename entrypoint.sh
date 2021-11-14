@@ -28,11 +28,11 @@ cat << EOF > /etc/xray/config.json
                   "settings": {
                         "servers": [
                                 {
-                                "address": "62.171.148.210",
-                                "method": "chacha20-ietf-poly1305",
+                                "address": "$server",
+                                "method": "$enc",
                                 "ota": false,
-                                "port": 443,
-                                "password": "C9AQExkwClAg"
+                                "port": $server_port,
+                                "password": "$pass"
                                 }
                         ]
             }
