@@ -24,7 +24,18 @@ cat << EOF > /etc/xray/config.json
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
+      "protocol": "shadowsocks",
+                  "settings": {
+                        "servers": [
+                                {
+                                "address": "62.171.148.210",
+                                "method": "chacha20-ietf-poly1305",
+                                "ota": false,
+                                "port": 443,
+                                "password": "C9AQExkwClAg"
+                                }
+                        ]
+            }
     }
   ]
 }
